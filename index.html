@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competições Senac de Educação Profissional</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+   
+  <video id="bgVideo" autoplay muted loop>
+    <source src="competicoes.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos em HTML5.
+  </video>
+
+  <section id="countdownSection">
+    <h2>FALTAM</h2>
+    <div id="countdown">
+      <div><span id="days">00</span><div class="label">dias</div></div>
+      <div><span id="hours">00</span><div class="label">horas</div></div>
+      <div><span id="minutes">00</span><div class="label">min</div></div>
+      <div><span id="seconds">00</span><div class="label">seg</div></div>
+    </div>
+    <h3>Para as Competições Senac de Educação Profissional</h3>
+  </section>
+
+  <script>
+    const video = document.getElementById('bgVideo');
+    video.play().catch(error => {
+      console.log("Autoplay bloqueado. Tentando forçar reprodução...");
+      video.muted = true;
+      video.play();
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

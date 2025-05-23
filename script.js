@@ -24,7 +24,7 @@ function toggleCountdownLoop() {
       countdownSection.classList.remove("show");
       toggleCountdownLoop();
     }, 5000);
-  }, 13000);
+  }, 22000);
 }
 
 updateCountdown();
